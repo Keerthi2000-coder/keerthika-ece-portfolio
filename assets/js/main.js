@@ -296,7 +296,7 @@
     box.setAttribute("aria-live", "polite");
     box.style.setProperty("--dur", DUR + "ms");
     box.innerHTML =
-      '<div class="welcome-avatar"><img src="assets/img/keerthika-graduation-portrait.jpg" alt="" width="68" height="68" />' +
+      '<div class="welcome-avatar"><img src="assets/img/keerthika-avatar.jpg" alt="" width="68" height="68" />' +
       '<span class="wave-hand" aria-hidden="true">\u{1F44B}</span></div>' +
       '<div class="welcome-msg">' +
       '<div class="hi">Hi, I\u2019m Keerthika!</div>' +

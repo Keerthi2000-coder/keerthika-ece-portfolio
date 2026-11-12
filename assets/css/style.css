@@ -1244,3 +1244,6 @@ main { overflow-x: clip; }
 
 .about-photo img { object-position: 50% 0%; }
 
+
+.welcome-avatar img { object-position: 50% 50%; }
+
