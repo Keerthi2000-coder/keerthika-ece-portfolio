@@ -7,6 +7,10 @@ Static portfolio website for an Early Childhood Educator (Toronto, ON), built to
 - **Old repo** `Keerthi2000-coder/keerthika-portfolio` (remote `old-origin`) holds the previous site. Don't push there.
 - **Handout:** `ECE245 Assignment Handout - Digital Showcase Portfolio Structure & Content Summary (F26).docx` (kept locally, not published). It is the source of truth for what each page must contain.
 
+## Portfolio Agent (local only)
+
+The private `Portfolio Agent/` folder (not in git) holds the full session knowledge base (`docs/01-06`), memory files and `setup.ps1`, which installs the `portfolio-agent` Claude Code agent on any machine. If it exists, read `Portfolio Agent/docs/05-assignment-requirements.md` first.
+
 ## Pages (navigation order required by the handout)
 
 | Nav | File | Content |
