@@ -1,208 +1,415 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-CA" class="no-js">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ECE Portfolio - Keerthika Mohanmoorthy</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-  <style>
-    body {
-      font-family: 'Raleway', sans-serif;
-      opacity: 0;
-      transition: opacity 0.4s ease-in-out;
-    }
-
-    body.fade-in {
-      opacity: 1;
-    }
-
-    header {
-      background-color: #00796b;
-      padding: 1rem 2rem;
-      color: white;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .nav-link.active {
-      font-weight: bold;
-      border-bottom: 2px solid #fff;
-    }
-
-    .hero {
-      background: url('https://images.unsplash.com/photo-1588072432836-e10032774350') center/cover no-repeat;
-      height: 100vh;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      text-align: center;
-    }
-
-    .hero::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-color: rgba(0, 121, 107, 0.6);
-      z-index: 0;
-    }
-
-    .hero .content {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .hero .content img {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 5px solid white;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-      margin-bottom: 1rem;
-      background: white;
-    }
-
-    section {
-      padding: 4rem 2rem;
-    }
-
-    .card-img-top {
-      height: 200px;
-      object-fit: cover;
-    }
-
-    footer {
-      background-color: #004d40;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      font-size: 0.9rem;
-    }
-
-    .fade-in {
-      animation: fadeIn 1.5s ease-in forwards;
-      opacity: 0;
-    }
-
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
-    }
-
-    .content-section h3 {
-      color: #00796b;
-    }
-  </style>
+  <script>(function(){var h=document.documentElement,a=false;try{if(sessionStorage.getItem("km-pt")==="1"){a=true;sessionStorage.removeItem("km-pt");}}catch(e){}try{var n=performance.getEntriesByType("navigation")[0];if(n&&n.type==="back_forward")a=true;}catch(e){}if(a&&!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches))h.classList.add("pt-arriving");})();</script>
+  <title>Keerthika Mohanmoorthy | Early Childhood Educator Portfolio</title>
+  <meta name="description" content="Professional portfolio of Keerthika Mohanmoorthy &#8212; Early Childhood Educator, private educator and academic tutor in Toronto, Ontario. Humber College ECE (2027), B.Sc. & B.Ed., 3+ years of teaching experience." />
+  <meta name="theme-color" content="#16243a" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Keerthika Mohanmoorthy | Early Childhood Educator" />
+  <meta property="og:description" content="Early Childhood Educator &#183; Private Educator &#183; Academic Tutor &#183; Teacher &#8212; Toronto, Ontario." />
+  <meta property="og:image" content="assets/img/keerthika-portrait.jpeg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231f7a72'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='28' fill='white'%3EKM%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
-<body class="fade-in">
-  <header class="d-flex justify-content-between align-items-center">
-   
-    <nav>
-  <ul class="nav">
-    <li class="nav-item"><a class="nav-link active text-white" href="index.html">Home</a></li>
-    <li class="nav-item"><a class="nav-link text-white" href="cover-letter.html">Cover Letter & Resume</a></li>
-    <li class="nav-item"><a class="nav-link text-white" href="curriculum-pedagogy.html">Curriculum & Pedagogy</a></li>
-    <li class="nav-item"><a class="nav-link text-white" href="continuous-learning.html">Continuous Learning</a></li>
-    <li class="nav-item"><a class="nav-link text-white" href="references.html">References</a></li>
-    <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
-    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
-  </ul>
-</nav>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Keerthika Mohanmoorthy &#8212; home">
+        <span class="brand-mark">KM</span>
+        <span class="brand-text">
+          <span class="brand-name">Keerthika Mohanmoorthy</span>
+          <span class="brand-role">Early Childhood Educator</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
+      <nav id="site-nav" class="nav" aria-label="Main">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="cover-letter.html">Resume &amp; Cover Letter</a>
+        <a href="curriculum-pedagogy.html">Curriculum &amp; Pedagogy</a>
+        <a href="continuous-learning.html">Continuous Learning</a>
+        <a href="references.html">References</a>
+        <a class="btn btn-primary btn-sm" href="#contact"><i class="fa-regular fa-paper-plane"></i> Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <div class="content">
-      <img src="profile1.jpeg" alt="Keerthika Mohanmoorthy" />
-       <h1>Keerthika Mohanmoorthy</h1>
-      
-      <p class="lead fade-in">Inspiring the Future Through Early Childhood Education</p>
-   <!--  <p class="fade-in"><strong>Visit:</strong> <a href="https://keerthika-portfolio.example.com" class="text-white text-decoration-underline">keerthika-portfolio.example.com</a></p>--> 
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="aurora" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+      <div class="dot-grid" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="reveal">
+          <span class="eyebrow"><span class="live-dot" aria-hidden="true"></span>Early Childhood Educator &#183; Toronto, Ontario</span>
+          <h1 data-split>Keerthika <em class="text-gradient">Mohanmoorthy</em></h1>
+          <p class="hero-lead">
+            An educator with more than three years of classroom teaching experience, now bringing that foundation to
+            licensed childcare, private in-home education and one-to-one tutoring in Ontario. I create warm,
+            play-based, curriculum-aligned learning that helps children feel safe, confident and curious.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary magnetic" href="assets/docs/Keerthika_Mohanmoorthy_Resume_2026.pdf" download><i class="fa-solid fa-arrow-down"></i> Download Resume</a>
+            <a class="btn btn-ghost magnetic" href="cover-letter.html">View Cover Letter <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <ul class="chip-row" aria-label="Roles">
+            <li class="chip"><i class="fa-solid fa-children"></i> Early Childhood Educator</li>
+            <li class="chip"><i class="fa-solid fa-house-chimney"></i> Private Educator</li>
+            <li class="chip"><i class="fa-solid fa-book-open-reader"></i> Academic Tutor</li>
+            <li class="chip"><i class="fa-solid fa-chalkboard-user"></i> Teacher</li>
+          </ul>
+          <a class="scroll-cue" href="#about"><span class="mouse" aria-hidden="true"></span> Scroll to explore</a>
+        </div>
+
+        <div class="portrait reveal-scale" data-tilt>
+         <div class="tilt">
+          <div class="orbit" aria-hidden="true"></div>
+          <div class="portrait-deco" aria-hidden="true"></div>
+          <div class="portrait-frame">
+            <img src="assets/img/keerthika-portrait.jpeg" alt="Portrait of Keerthika Mohanmoorthy" width="1065" height="1065" />
+          </div>
+          <div class="portrait-badge alt">
+            <span class="icon"><i class="fa-solid fa-graduation-cap"></i></span>
+            <span>Humber College ECE<small>Expected May 2027</small></span>
+          </div>
+          <div class="portrait-badge">
+            <span class="icon"><i class="fa-solid fa-shield-heart"></i></span>
+            <span>VSC Clear<small>First Aid &amp; CPR Level C</small></span>
+          </div>
+         </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Marquee ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span><i class="mq-emoji">&#129528;</i>Play-based learning</span><span><i class="mq-emoji">&#128292;</i>Foundational literacy</span><span><i class="mq-emoji">&#128290;</i>Numeracy &amp; number sense</span><span><i class="mq-emoji">&#127752;</i>Differentiated instruction</span><span><i class="mq-emoji">&#129782;</i>Self-regulation</span><span><i class="mq-emoji">&#129309;</i>Inclusive classrooms</span><span><i class="mq-emoji">&#127969;</i>Family partnership</span><span><i class="mq-emoji">&#128218;</i>Ontario curriculum</span>
+        <span><i class="mq-emoji">&#129528;</i>Play-based learning</span><span><i class="mq-emoji">&#128292;</i>Foundational literacy</span><span><i class="mq-emoji">&#128290;</i>Numeracy &amp; number sense</span><span><i class="mq-emoji">&#127752;</i>Differentiated instruction</span><span><i class="mq-emoji">&#129782;</i>Self-regulation</span><span><i class="mq-emoji">&#129309;</i>Inclusive classrooms</span><span><i class="mq-emoji">&#127969;</i>Family partnership</span><span><i class="mq-emoji">&#128218;</i>Ontario curriculum</span>
+      </div>
     </div>
-  </section>
 
-  <section class="container content-section">
-    <h3 class="mb-3">Land Acknowledgement</h3>
-    <p>I would like to acknowledge that I am a student studying at Humber Polytechnic located on the traditional and Treaty 13, 1805 lands of the Mississaugas of the Credit...</p>
+    <!-- ===== Stats ===== -->
+    <section class="section-tight" aria-label="At a glance">
+      <div class="container">
+        <div class="stats reveal-scale">
+          <div class="stat"><div class="stat-num"><span data-count="3" style="color:inherit">3</span><span>+</span></div><div class="stat-label">Years of full-time classroom teaching</div></div>
+          <div class="stat"><div class="stat-num">1&#8211;<span data-count="15" style="color:inherit">15</span><span>+</span></div><div class="stat-label">Ages supported, from preschool to secondary</div></div>
+          <div class="stat"><div class="stat-num"><span data-count="4" style="color:inherit">4</span></div><div class="stat-label">Education roles in Ontario since 2025</div></div>
+          <div class="stat"><div class="stat-num"><span data-count="2" style="color:inherit">2</span><span>&#215;</span></div><div class="stat-label">Bachelor&#8217;s degrees (B.Sc. &amp; B.Ed.), WES-assessed</div></div>
+        </div>
+      </div>
+    </section>
 
-    <h3 class="mt-5">About Me</h3>
-    <p>I am currently studying Early Childhood Education at Humber Polytechnic. I have had the privilege of working with children, families, and communities...</p>
+    <!-- ===== Land acknowledgement ===== -->
+    <section class="section-tight">
+      <div class="container">
+        <div class="land reveal">
+          <div class="icon" aria-hidden="true"><i class="fa-solid fa-leaf"></i></div>
+          <div>
+            <h2>Land Acknowledgement</h2>
+            <p>
+              I would like to acknowledge that I am a student studying at Humber Polytechnic, located on the traditional
+              and Treaty 13, 1805 lands of the Mississaugas of the Credit. I am grateful for the opportunity to learn,
+              teach and work on this land, and I recognize the enduring presence of the First Nations, Inuit and M&#233;tis
+              peoples who continue to care for it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <h3 class="mt-5">Future Professional Goals</h3>
-    <ul>
-      <li>Support inclusive classrooms with children of all abilities</li>
-      <li>Design arts-based and nature-inspired programming</li>
-      <li>Continue developing strong family and community partnerships</li>
-    </ul>
+    <!-- ===== About ===== -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <figure class="about-photo reveal" style="margin:0">
+          <img src="assets/img/keerthika-graduation.jpeg" alt="Keerthika Mohanmoorthy at her graduation, holding her degree" width="1115" height="1280" loading="lazy" />
+          <figcaption class="caption"><strong>B.Sc. &amp; B.Ed.</strong>VISTAS, Chennai &#183; Canadian equivalency assessed by WES</figcaption>
+        </figure>
+        <div class="reveal">
+          <span class="eyebrow"><span class="em" aria-hidden="true">&#127793;</span> About Me</span>
+          <h2>Teaching that starts with relationships</h2>
+          <p>
+            I began my career as a Science and Psychology teacher and student mentor in a CBSE secondary school in India,
+            where I spent three years planning inquiry-based, student-centred lessons for Grades 6&#8211;10. Since moving to
+            Ontario I have brought that experience into early learning, working in licensed childcare centres,
+            tutoring learners aged 3&#8211;15, and running my own private in-home education practice.
+          </p>
+          <p class="pull">
+            &#8220;My approach centres on building warm, respectful relationships with children and supporting their cognitive,
+            social, emotional and physical development.&#8221;
+          </p>
+          <p>
+            I am currently completing the Early Childhood Education diploma at Humber College, with completion expected in May 2027,
+            and my Ontario College of Teachers (OCT) application is in progress.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <h3 class="mt-5">Talents, Hobbies & Interests</h3>
-    <ul>
-      <li>Musician – play piano and ukulele with children</li>
-      <li>Enjoy writing and illustrating children’s books</li>
-      <li>Love exploring nature and outdoor education</li>
-    </ul>
-  </section>
+    <!-- ===== Competencies ===== -->
+    <section class="section section-alt" id="strengths">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow"><span class="em" aria-hidden="true">&#129513;</span> What I Bring</span>
+          <h2>Core competencies</h2>
+          <p>Skills built across preschool rooms, kindergarten, elementary and secondary classrooms, and one-to-one learning.</p>
+        </div>
+        <div class="bento" data-stagger="90">
+          <article class="card spot feature reveal-scale" data-emoji="&#129528;">
+            <span class="ring" aria-hidden="true"></span>
+            <div>
+              <div class="card-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+              <h3>Play-based early learning</h3>
+              <p>Developmentally appropriate, play-based experiences for toddlers, preschoolers, kindergarten and school-age children that build curiosity, independence and self-regulation.</p>
+            </div>
+            <p class="small" style="opacity:.8;margin:1.5rem 0 0"><i class="fa-solid fa-children"></i>&nbsp; Ages 1&#8211;4 &#183; JK&#8211;SK &#183; Grades 1&#8211;5</p>
+          </article>
+          <article class="card spot reveal-scale" data-emoji="&#128292;">
+            <div class="card-icon sun"><i class="fa-solid fa-spell-check"></i></div>
+            <h3>Foundational literacy &amp; numeracy</h3>
+            <p>Phonological awareness, phonics, early reading and writing, letter formation, number sense and problem-solving.</p>
+          </article>
+          <article class="card spot reveal-scale" data-emoji="&#127752;">
+            <div class="card-icon rose"><i class="fa-solid fa-layer-group"></i></div>
+            <h3>Differentiated instruction</h3>
+            <p>Ontario curriculum-aligned lessons adapted to each learner, with individualized learning plans for one-to-one work.</p>
+          </article>
+          <article class="card spot reveal-scale" data-emoji="&#128200;">
+            <div class="card-icon navy"><i class="fa-solid fa-chart-line"></i></div>
+            <h3>Assessment &amp; progress monitoring</h3>
+            <p>Formative and summative assessment that shows where each learner is and what to teach next.</p>
+          </article>
+          <article class="card spot reveal-scale" data-emoji="&#129303;">
+            <div class="card-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+            <h3>Positive guidance &amp; well-being</h3>
+            <p>Inclusive environments, calm routines and transitions, safe supervision, and social-emotional support.</p>
+          </article>
+          <article class="card spot full reveal-scale" data-emoji="&#128104;&#8205;&#128105;&#8205;&#128103;">
+            <div class="card-icon sun"><i class="fa-solid fa-people-roof"></i></div>
+            <h3>Family partnership</h3>
+            <p>Clear, respectful communication with parents about progress, goals and next steps.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <section id="portfolio" class="container">
-    <h2 class="text-center text-teal mb-4">My Work</h2>
-    <p class="text-center">Content to be developed in Semester 4.</p>
-  </section>
+    <!-- ===== Experience ===== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="em" aria-hidden="true">&#127822;</span> Experience</span>
+          <h2>Professional experience</h2>
+          <p>Childcare, private education, tutoring and classroom teaching across preschool to secondary levels.</p>
+        </div>
 
-  <section id="about" class="bg-light">
-    <div class="container text-center">
-      <h2>About</h2>
-      <p>This page will feature my teaching philosophy and learning reflections.</p>
+        <ol class="timeline">
+          <li class="tl-item current reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-card spot">
+              <div class="tl-top"><h3>Private In-Home Educator <span class="badge">Current</span></h3><span class="tl-date">Jan 2026 &#8211; Present</span></div>
+              <div class="tl-org"><strong>Private Education Practice</strong> &#183; Freelance &#183; Toronto, ON</div>
+              <ul>
+                <li>Provide individualized, one-to-one in-home support for public-, private- and home-schooled learners from preschool through higher secondary.</li>
+                <li>Plan structured, developmentally informed instruction aligned with Ontario curriculum expectations.</li>
+                <li>Strengthen foundational literacy, numeracy, learning confidence and independent learning skills.</li>
+                <li>Work with a select number of families to support continuity, personalized planning and ongoing development.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="tl-item current reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-card spot">
+              <div class="tl-top"><h3>Early Childhood Educator <span class="badge">Current</span></h3><span class="tl-date">May 2025 &#8211; Present</span></div>
+              <div class="tl-org"><strong>The Little Campus</strong> &#183; On-Call &#183; Toronto, ON</div>
+              <ul>
+                <li>Support play-based learning and developmentally appropriate programming across childcare settings.</li>
+                <li>Supervise children during indoor and outdoor activities, prioritizing safety, engagement and well-being.</li>
+                <li>Assist with daily routines, transitions, snack times and learning-centre activities.</li>
+                <li>Encourage independence, self-regulation and positive social interactions; communicate respectfully with families.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-card spot">
+              <div class="tl-top"><h3>Early Childhood Educator</h3><span class="tl-date">Jul 2025 &#8211; Dec 2025</span></div>
+              <div class="tl-org"><strong>Gold Circle Early Childhood Daycare Centre</strong> &#183; Part-Time &#183; Etobicoke, ON</div>
+              <ul>
+                <li>Designed and implemented play-based learning for preschool (ages 1&#8211;4), Kindergarten (JK&#8211;SK) and school-age children (Grades 1&#8211;5).</li>
+                <li>Planned early learning and academic-support activities for literacy, numeracy, self-regulation and collaboration.</li>
+                <li>Supported safe, inclusive and organized learning environments responsive to individual developmental needs.</li>
+                <li>Collaborated with educators and families to support children&#8217;s learning and well-being.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-card spot">
+              <div class="tl-top"><h3>Academic Tutor</h3><span class="tl-date">Jul 2025 &#8211; Dec 2025</span></div>
+              <div class="tl-org"><strong>Tutor Doctor</strong> &#183; Contract, Part-Time &#183; Etobicoke, ON</div>
+              <ul>
+                <li>Delivered one-to-one in-home academic support to learners aged 3&#8211;15, plus selected university-level courses.</li>
+                <li>Taught phonological awareness, phonics, early reading, writing, sentence construction, number sense and problem-solving.</li>
+                <li>Reinforced classroom learning and supported homework, focus and independent task completion.</li>
+                <li>Communicated progress, goals and next steps with parents; completed professional development in effective tutoring.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-card spot">
+              <div class="tl-top"><h3>Science &amp; Psychology Teacher &#183; Student Mentor</h3><span class="tl-date">Jun 2022 &#8211; Apr 2025</span></div>
+              <div class="tl-org"><strong>Future Senior Secondary School (CBSE)</strong> &#183; Ambur, India</div>
+              <ul>
+                <li>Planned and delivered curriculum-aligned Science and Psychology for Grades 6&#8211;10 using inquiry-based, student-centred approaches.</li>
+                <li>Designed lessons and assessments that developed conceptual understanding, critical thinking and ethical reasoning.</li>
+                <li>Applied differentiated, inclusive strategies with formative and summative assessment to guide instruction.</li>
+                <li>Mentored students to build confidence and engagement; communicated with families and collaborated with colleagues.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Education & credentials ===== -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="em" aria-hidden="true">&#127891;</span> Education &amp; Credentials</span>
+          <h2>Qualified, screened and ready</h2>
+        </div>
+        <div class="split">
+          <div class="card reveal">
+            <div class="edu-item">
+              <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div>
+                <h3>Early Childhood Education Diploma</h3>
+                <p>Humber College, Toronto, ON</p>
+                <p class="meta">May 2025 &#8211; May 2027 &#183; Expected completion May 2027</p>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="card-icon sun"><i class="fa-solid fa-building-columns"></i></div>
+              <div>
+                <h3>Bachelor of Science (B.Sc.) &amp; Bachelor of Education (B.Ed.)</h3>
+                <p>VELS Institute of Science, Technology &amp; Advanced Studies (VISTAS), Chennai, India</p>
+                <p class="meta">2018 &#8211; 2023 &#183; WES-assessed Canadian equivalency: dual bachelor&#8217;s degree (four years)</p>
+              </div>
+            </div>
+          </div>
+          <div class="reveal">
+            <ul class="status-list" data-stagger="70">
+              <li class="reveal"><span class="what"><i class="fa-solid fa-kit-medical"></i> Standard First Aid &amp; CPR Level C</span><span class="pill ok">Certified</span></li>
+              <li class="reveal"><span class="what"><i class="fa-solid fa-user-shield"></i> Vulnerable Sector Check</span><span class="pill ok">Clear</span></li>
+              <li class="reveal"><span class="what"><i class="fa-solid fa-scale-balanced"></i> Criminal Record Check</span><span class="pill ok">Clear</span></li>
+              <li class="reveal"><span class="what"><i class="fa-solid fa-syringe"></i> Medical, immunization &amp; TB screening</span><span class="pill ok">Up to date</span></li>
+              <li class="reveal"><span class="what"><i class="fa-solid fa-id-card"></i> Ontario College of Teachers (OCT)</span><span class="pill prog">In progress</span></li>
+              <li class="reveal"><span class="what"><i class="fa-solid fa-passport"></i> Eligible to work in Canada</span><span class="pill info">Yes</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Availability ===== -->
+    <section class="section" id="availability">
+      <div class="container">
+        <div class="band reveal">
+          <span class="eyebrow"><span class="em" aria-hidden="true">&#128197;</span> Availability</span>
+          <h2>Open to Early Childhood Educator &amp; childcare roles</h2>
+          <p>Including Early Childhood Educator, Childcare Assistant, Classroom Assistant and Montessori Support Educator positions.</p>
+          <div class="avail-grid">
+            <div class="avail">
+              <div class="when">Now &#8211; Apr 30, 2027</div>
+              <div class="what">Regular part-time, three days a week</div>
+              <p>Wednesday to Friday</p>
+            </div>
+            <div class="avail">
+              <div class="when">From May 2027</div>
+              <div class="what">Full-time opportunities</div>
+              <p>After completing the Humber ECE diploma</p>
+            </div>
+          </div>
+          <div class="band-actions">
+            <a class="btn btn-light magnetic" href="mailto:itskeerthi2000@gmail.com"><i class="fa-regular fa-envelope"></i> Email Keerthika</a>
+            <a class="btn btn-outline-light" href="assets/docs/Keerthika_Mohanmoorthy_Resume_2026.pdf" download><i class="fa-solid fa-arrow-down"></i> Resume (PDF)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section" id="contact" style="padding-top:0">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow"><span class="em" aria-hidden="true">&#128140;</span> Contact</span>
+          <h2>Let&#8217;s talk</h2>
+          <p>I would welcome the chance to discuss how I can support your centre, school or family.</p>
+        </div>
+        <div class="contact-grid" data-stagger="100">
+          <a class="contact-card spot reveal" href="mailto:itskeerthi2000@gmail.com">
+            <span class="card-icon"><i class="fa-regular fa-envelope"></i></span>
+            <span><span class="label">Email</span><br /><span class="value">itskeerthi2000@gmail.com</span></span>
+          </a>
+          <a class="contact-card spot reveal" href="tel:+14374509655">
+            <span class="card-icon sun"><i class="fa-solid fa-phone"></i></span>
+            <span><span class="label">Phone</span><br /><span class="value">+1 437 450 9655</span></span>
+          </a>
+          <a class="contact-card spot reveal" href="https://www.linkedin.com/in/keerthika-mohanmoorthy" target="_blank" rel="noopener">
+            <span class="card-icon navy"><i class="fa-brands fa-linkedin-in"></i></span>
+            <span><span class="label">LinkedIn</span><br /><span class="value">in/keerthika-mohanmoorthy</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <span class="brand-mark">KM</span>
+            <span class="brand-text"><span class="brand-name">Keerthika Mohanmoorthy</span><span class="brand-role">Early Childhood Educator</span></span>
+          </a>
+          <p>Early Childhood Educator, Private Educator, Academic Tutor and Teacher based in Toronto, Ontario.</p>
+        </div>
+        <div>
+          <h4>Portfolio</h4>
+          <ul>
+            <li><a href="cover-letter.html">Resume &amp; Cover Letter</a></li>
+            <li><a href="curriculum-pedagogy.html">Curriculum &amp; Pedagogy</a></li>
+            <li><a href="continuous-learning.html">Continuous Learning</a></li>
+            <li><a href="references.html">References</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <ul>
+            <li><a href="mailto:itskeerthi2000@gmail.com">itskeerthi2000@gmail.com</a></li>
+            <li><a href="tel:+14374509655">+1 437 450 9655</a></li>
+            <li><a href="https://www.linkedin.com/in/keerthika-mohanmoorthy" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&#169; <span data-year>2026</span> Keerthika Mohanmoorthy. All rights reserved.</span>
+        <span>All content in this portfolio is original, accurate, current, and cited where necessary.</span>
+      </div>
     </div>
-  </section>
-
-  <section id="contact">
-    <div class="container text-center">
-      <h2 class="mb-4">Get in Touch</h2>
-      <p>Email: <a href="mailto:itskeerthi2000@gmail.com">itskeerthi2000@gmail.com</a></p>
-      <p>Phone: (437) 450-9655</p>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Keerthika Mohanmoorthy | ECE Portfolio</p>
-    <p>All content presented in this portfolio is original, accurate, current, and cited where necessary.</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Smooth page transition on internal links
-    window.addEventListener("DOMContentLoaded", () => {
-      document.body.classList.add("fade-in");
-
-      document.querySelectorAll("a[href]").forEach(link => {
-        const isInternal = link.hostname === window.location.hostname && !link.hash;
-        if (isInternal) {
-          link.addEventListener("click", function (e) {
-            e.preventDefault();
-            const href = this.href;
-            document.body.classList.remove("fade-in");
-            document.body.style.opacity = "0";
-            setTimeout(() => {
-              window.location.href = href;
-            }, 400); // duration must match CSS transition time
-          });
-        }
-      });
-    });
-  </script>
+  <script src="assets/js/main.js"></script>
 </body>
-
 </html>
