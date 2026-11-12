@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-  <link rel="stylesheet" href="assets/css/style.css?v=202611121438" />
+  <link rel="stylesheet" href="assets/css/style.css?v=202611121958" />
 </head>
 
 <body>
@@ -24,7 +24,7 @@
 
   <header class="site-header">
     <div class="container">
-      <a class="brand" href="index.html" aria-label="Keerthika Mohanmoorthy &#8212; home">
+      <a class="brand" href="index.html" aria-label="Keerthika Mohanmoorthy, home">
         <span class="brand-mark">KM</span>
         <span class="brand-text">
           <span class="brand-name">Keerthika Mohanmoorthy</span>
@@ -34,11 +34,21 @@
       <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
       <nav id="site-nav" class="nav" aria-label="Main">
         <a href="index.html" aria-current="page">Home</a>
-        <a href="cover-letter.html">Resume &amp; Cover Letter</a>
-        <a href="curriculum-pedagogy.html">Curriculum &amp; Pedagogy</a>
-        <a href="continuous-learning.html">Continuous Learning</a>
+        <a href="cover-letter.html">Cover Letter &amp; Resume</a>
+        <a href="philosophy.html">Philosophy of Teaching &amp; Learning</a>
+        <div class="nav-dd">
+          <a href="curriculum-pedagogy.html" class="dd-toggle" aria-haspopup="true">Curriculum &amp; Pedagogy <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
+          <div class="dd-menu">
+            <a href="curriculum-pedagogy.html"><span class="dd-letter"><i class="fa-solid fa-table-cells-large"></i></span> Overview</a>
+            <a href="pedagogical-documentation.html"><span class="dd-letter">A</span> Pedagogical Documentation</a>
+            <a href="learning-story.html"><span class="dd-letter">B</span> Learning Story</a>
+            <a href="inclusive-plans.html"><span class="dd-letter">C</span> Detailed Responsive Inclusive Plans</a>
+            <a href="meaningful-artifacts.html"><span class="dd-letter">D</span> Meaningful Artifacts</a>
+            <a href="resources-in-practice.html"><span class="dd-letter">E</span> Resources Used in Practice</a>
+          </div>
+        </div>
+        <a href="continuous-learning.html">Continuous Professional Learning</a>
         <a href="references.html">References</a>
-        <a class="btn btn-primary btn-sm" href="#contact"><i class="fa-regular fa-paper-plane"></i> Contact</a>
       </nav>
     </div>
   </header>
@@ -136,21 +146,25 @@
           <figcaption class="caption"><strong>B.Sc. &amp; B.Ed.</strong>VISTAS, Chennai &#183; Canadian equivalency assessed by WES</figcaption>
         </figure>
         <div class="reveal">
-          <span class="eyebrow"><span class="em" aria-hidden="true">&#127793;</span> About Me</span>
+          <span class="eyebrow"><span class="em" aria-hidden="true">&#127793;</span> Professional Biography</span>
           <h2>Teaching that starts with relationships</h2>
           <p>
-            I began my career as a Science and Psychology teacher and student mentor in a CBSE secondary school in India,
-            where I spent three years planning inquiry-based, student-centred lessons for Grades 6&#8211;10. Since moving to
-            Ontario I have brought that experience into early learning, working in licensed childcare centres,
-            tutoring learners aged 3&#8211;15, and running my own private in-home education practice.
-          </p>
-          <p class="pull">
-            &#8220;My approach centres on building warm, respectful relationships with children and supporting their cognitive,
-            social, emotional and physical development.&#8221;
+            I am an educator with more than three years of teaching experience, working across diverse early childhood
+            communities in the Greater Toronto Area. In licensed child care at The Little Campus and Gold Circle Early
+            Childhood Daycare Centre, I have supported toddlers and preschoolers (ages 1&#8211;4), kindergarten children
+            (JK&#8211;SK) and school-age children (Grades 1&#8211;5) through play-based, developmentally appropriate learning.
+            Through Tutor Doctor and my own private in-home practice, I also work one-to-one with learners from preschool to
+            secondary school, including public-, private- and home-schooled children and their families. Before coming to
+            Canada, I spent three years teaching Science and Psychology and mentoring students in Grades 6&#8211;10 at a CBSE
+            school in India.
           </p>
           <p>
-            I am currently completing the Early Childhood Education diploma at Humber College, with completion expected in May 2027,
-            and my Ontario College of Teachers (OCT) application is in progress.
+            I am completing my Early Childhood Education diploma at Humber College (expected May 2027), and my Ontario College
+            of Teachers application is in progress. My goal is to begin a full-time role as an Early Childhood Educator in a
+            licensed program, where I can create inclusive learning environments for children of all abilities, design
+            arts-based and nature-inspired experiences, and continue to build strong partnerships with families and the
+            community. Guided by my philosophy that teaching and learning is a kaleidoscope of possibilities, I will listen,
+            observe and reflect alongside children so new possibilities can emerge.
           </p>
         </div>
       </div>
@@ -362,10 +376,6 @@
             <span class="card-icon"><i class="fa-regular fa-envelope"></i></span>
             <span><span class="label">Email</span><br /><span class="value">itskeerthi2000@gmail.com</span></span>
           </a>
-          <a class="contact-card spot reveal" href="tel:+14374509655">
-            <span class="card-icon sun"><i class="fa-solid fa-phone"></i></span>
-            <span><span class="label">Phone</span><br /><span class="value">+1 437 450 9655</span></span>
-          </a>
           <a class="contact-card spot reveal" href="https://www.linkedin.com/in/keerthika-mohanmoorthy" target="_blank" rel="noopener">
             <span class="card-icon navy"><i class="fa-brands fa-linkedin-in"></i></span>
             <span><span class="label">LinkedIn</span><br /><span class="value">in/keerthika-mohanmoorthy</span></span>
@@ -377,20 +387,29 @@
 
   <footer class="site-footer">
     <div class="container">
+      <div class="originality" role="note" aria-labelledby="originality-title">
+        <span class="orig-icon" aria-hidden="true">&#128395;&#65039;</span>
+        <div>
+          <h4 id="originality-title">Statement of Originality &amp; Authenticity</h4>
+          <p>I, Keerthika Mohanmoorthy, declare that the work presented in this portfolio is my own original and authentic work. Work completed with classmates is identified as group work, and my individual contributions are shown. All ideas, words and images from other sources are acknowledged in APA format on the <a href="references.html">References</a> page. Children and families featured in any documentation are kept anonymous to protect their confidentiality.</p>
+        </div>
+      </div>
       <div class="footer-grid">
         <div class="footer-brand">
           <a class="brand" href="index.html">
             <span class="brand-mark">KM</span>
             <span class="brand-text"><span class="brand-name">Keerthika Mohanmoorthy</span><span class="brand-role">Early Childhood Educator</span></span>
           </a>
-          <p>Early Childhood Educator, Private Educator, Academic Tutor and Teacher based in Toronto, Ontario.</p>
+          <p>Digital Showcase Portfolio, Early Childhood Education, Humber College. Toronto, Ontario.</p>
         </div>
         <div>
           <h4>Portfolio</h4>
           <ul>
-            <li><a href="cover-letter.html">Resume &amp; Cover Letter</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cover-letter.html">Cover Letter &amp; Resume</a></li>
+            <li><a href="philosophy.html">Philosophy of Teaching &amp; Learning</a></li>
             <li><a href="curriculum-pedagogy.html">Curriculum &amp; Pedagogy</a></li>
-            <li><a href="continuous-learning.html">Continuous Learning</a></li>
+            <li><a href="continuous-learning.html">Continuous Professional Learning</a></li>
             <li><a href="references.html">References</a></li>
           </ul>
         </div>
@@ -398,18 +417,17 @@
           <h4>Get in touch</h4>
           <ul>
             <li><a href="mailto:itskeerthi2000@gmail.com">itskeerthi2000@gmail.com</a></li>
-            <li><a href="tel:+14374509655">+1 437 450 9655</a></li>
             <li><a href="https://www.linkedin.com/in/keerthika-mohanmoorthy" target="_blank" rel="noopener">LinkedIn</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
         <span>&#169; <span data-year>2026</span> Keerthika Mohanmoorthy. All rights reserved.</span>
-        <span>All content in this portfolio is original, accurate, current, and cited where necessary.</span>
+        <span>Statement of Originality &amp; Authenticity applies to every page of this portfolio.</span>
       </div>
     </div>
   </footer>
 
-  <script src="assets/js/main.js?v=202611121438"></script>
+  <script src="assets/js/main.js?v=202611121958"></script>
 </body>
 </html>
