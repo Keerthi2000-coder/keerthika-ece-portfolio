@@ -62,7 +62,7 @@ Handout word counts: reflective narratives ~100â€“150 words (A, B, D, E), ~100â€
 tools/sync-layout.js        shared header/footer/originality/subnav generator (run after changes)
 assets/css/style.css        the only stylesheet (tokens in :root at the top; handout components at the end)
 assets/js/main.js           the only script (see Interactions)
-assets/img/                 keerthika-graduate-pop.png (hero: illustrated cut-out, waist-up, transparent PNG made from "Cartoon Graduate Holding Diploma.png" with Portfolio Agent/scripts/remove-black-bg.ps1; shown as `.portrait.pop` with no frame/orbit), keerthika-avatar.jpg (welcome popup face crop), keerthika-graduation-portrait.jpg (photo version, currently unused), keerthika-graduation-diploma.jpg (About; square crop of the diploma photo)
+assets/img/                 keerthika-graduate-pop.png (hero: illustrated cut-out, waist-up, transparent PNG made from "Cartoon Graduate Holding Diploma.png" with Portfolio Agent/scripts/remove-black-bg.ps1; shown as `.portrait.pop` with no frame/orbit), keerthika-avatar.jpg (welcome popup face crop), keerthika-graduate-mini.png (small full-length figure on the right of every inner-page hero; injected by tools/sync-layout.js as `.hero-figure`, shown only at >=1100px), keerthika-graduation-portrait.jpg (photo version, currently unused), keerthika-graduation-diploma.jpg (About; square crop of the diploma photo)
 assets/docs/application/    resume, cover letter, professional references PDFs (published)
 assets/docs/coursework/     philosophy + pedagogical documentation PDFs (published; ped doc has its title page removed)
 assets/docs/certificates/   certificates (published)

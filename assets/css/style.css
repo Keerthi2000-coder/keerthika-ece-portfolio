@@ -1298,3 +1298,18 @@ main { overflow-x: clip; }
 }
 .portrait.pop .portrait-badge.alt { bottom: auto; left: auto; }
 .portrait.pop .portrait-badge:not(.alt) { top: auto; right: auto; }
+
+/* ---------- Inner-page hero figure ---------- */
+.hero-figure { display: none; }
+@media (min-width: 1100px) {
+  .page-hero .hero-figure {
+    display: block; position: absolute; z-index: 1; bottom: 0; pointer-events: none;
+    right: max(3%, calc((100vw - 1160px) / 2 - 10px)); height: min(92%, 380px); width: auto;
+    filter: drop-shadow(0 14px 18px rgba(22,36,58,.22));
+    -webkit-mask-image: linear-gradient(#000 88%, transparent); mask-image: linear-gradient(#000 88%, transparent);
+    animation: figure-in .9s cubic-bezier(.2,.75,.15,1) .2s both;
+  }
+  .page-hero .shape.s1, .page-hero .shape.s2 { display: none; }
+}
+@keyframes figure-in { from { opacity: 0; transform: translateY(30px); } }
+@media (prefers-reduced-motion: reduce) { .page-hero .hero-figure { animation: none; } }

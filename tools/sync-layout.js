@@ -166,7 +166,10 @@ for (const page of PAGES) {
     s = s.replace(/<nav class="cp-subnav"[^>]*>[\s\S]*?<\/nav>/, subnav(page));
     s = s.replace(/<nav class="cp-pager"[^>]*>[\s\S]*?<\/nav>/, pager(page));
   }
-  s = s.replace(/style\.css(\?v=\d+)?"/g, `style.css?v=${version}"`).replace(/main\.js(\?v=\d+)?"/g, `main.js?v=${version}"`);
+  // small illustrated figure on the right of every inner-page hero
+  if (s.includes('<section class="page-hero">') && !s.includes('class="hero-figure"')) {
+    s = s.replace('<section class="page-hero">', '<section class="page-hero">\n      <img class="hero-figure" src="assets/img/keerthika-graduate-mini.png" alt="" width="300" height="742" aria-hidden="true" />');
+  }  s = s.replace(/style\.css(\?v=\d+)?"/g, `style.css?v=${version}"`).replace(/main\.js(\?v=\d+)?"/g, `main.js?v=${version}"`);
   s = encode(s);
   fs.writeFileSync(file, s);
 
