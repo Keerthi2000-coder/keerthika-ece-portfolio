@@ -903,3 +903,7 @@ html.pt-arriving main > section:first-child .container { animation: pt-content-i
   .about-photo { max-width: 280px; }
 }
 @media (max-width: 480px) { .portrait { width: 66%; } }
+
+/* About photo: square crop */
+.about-photo img { aspect-ratio: 1 / 1; height: auto; width: 100%; object-fit: cover; object-position: 50% 18%; }
+.about-grid { align-items: center; }
