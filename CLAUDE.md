@@ -16,7 +16,7 @@ The private `Portfolio Agent/` folder (not in git) holds the full session knowle
 | Nav | File | Content |
 | --- | --- | --- |
 | Home | `index.html` | Name, professional photo (no filters), **2-paragraph professional bio** (diverse EC communities + future goals), **personalized land acknowledgement**, competencies, experience, education, availability, contact (email + LinkedIn only) |
-| Cover Letter & Resume | `cover-letter.html` | Cover letter text, resume highlights, embedded resume PDF |
+| Cover Letter & Resume | `cover-letter.html` | Resume first (highlights, competencies, embedded resume PDF), then the cover letter text |
 | Philosophy of Teaching & Learning | `philosophy.html` | Core belief, extracted **"I believe" statements**, 5 facets + Reggio Emilia (theory + practice), PTL PDF |
 | Curriculum & Pedagogy (dropdown) | `curriculum-pedagogy.html` | Hub with cards for A–E + teaching approaches, age groups, planning cycle |
 | ↳ A. Pedagogical Documentation | `pedagogical-documentation.html` | ECE 245 "Colouring with Chalk" group doc, her contributions, PDF, CCEYA / regulation links |
