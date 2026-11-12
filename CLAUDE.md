@@ -58,7 +58,7 @@ Handout word counts: reflective narratives ~100–150 words (A, B, D, E), ~100�
 tools/sync-layout.js        shared header/footer/originality/subnav generator (run after changes)
 assets/css/style.css        the only stylesheet (tokens in :root at the top; handout components at the end)
 assets/js/main.js           the only script (see Interactions)
-assets/img/                 keerthika-portrait.jpeg (hero), keerthika-graduation.jpeg (About)
+assets/img/                 keerthika-graduation-portrait.jpg (hero + welcome popup; 4:5 crop of the campus graduation photo), keerthika-graduation.jpeg (About)
 assets/docs/application/    resume, cover letter, professional references PDFs (published)
 assets/docs/coursework/     philosophy + pedagogical documentation PDFs (published; ped doc has its title page removed)
 assets/docs/certificates/   certificates (published)
@@ -73,6 +73,8 @@ Source Documents/           original files as received. NOT published (gitignore
 - **Confidentiality:** children only as Child A, B, …; no student numbers or classmates' surnames.
 - **Non-ASCII → entities** (the sync script does this). Check: `LC_ALL=C grep -c '[^ -~	]' *.html assets/css/style.css assets/js/main.js` → all 0.
 - **Write "Resume", not "Résumé"** (her preference).
+- **Hero photo:** keep badges/decorations off the photo itself (handout: professional photo free of filters and embellishments). Originals live in `Source Documents/4 - Photos/`.
+- **Roles she is open to:** Early Childhood Educator, Childcare Assistant, Classroom Assistant, Montessori Support Educator, Academic Tutor, Classroom Teacher/Assistant/Co-Teacher (professor asked to include teaching roles).
 - **Commit author** for this repo is set locally: `Keerthika Mohanmoorthy <itskeerthi2000@gmail.com>`.
 - The folder path contains an apostrophe (`Keerthika's Portfolio`), which breaks bash quoting/heredocs. Prefer PowerShell or Node scripts.
 - Regex edits on HTML: never use lazy `[\s\S]*?</span>\s*</span>`-style patterns; they can swallow half a page. Anchor on unique markers.

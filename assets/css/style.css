@@ -1231,3 +1231,13 @@ html.pt-arriving main > section:first-child .container { animation: pt-content-i
 
 main { overflow-x: clip; }
 
+
+.portrait-frame img { object-position: 50% 0%; }
+.welcome-avatar img { object-position: 50% 14%; }
+
+
+/* Keep badges off the professional photo (handout: no embellishments on the photo) */
+.portrait-badge.alt { top: -34px; right: -34px; bottom: auto; left: auto; }
+.portrait-badge { bottom: -30px; left: -34px; }
+@media (max-width: 900px) { .portrait-badge.alt { top: -26px; right: -18px; } .portrait-badge { bottom: -24px; left: -18px; } }
+.hero .portrait { margin-top: 1.5rem; margin-bottom: 1.5rem; }
