@@ -892,3 +892,14 @@ html.pt-arriving main > section:first-child .container { animation: pt-content-i
   html.pt-arriving main > section:first-child .container { animation: none; }
 }
 @media print { html::after, html::before { display: none; } }
+
+/* photo-size override */
+.portrait { width: min(100%, 320px); }
+.about-grid { grid-template-columns: minmax(0, 340px) 1fr; }
+.about-photo { max-width: 340px; }
+@media (max-width: 900px) {
+  .portrait { width: min(62%, 260px); }
+  .about-grid { grid-template-columns: 1fr; }
+  .about-photo { max-width: 280px; }
+}
+@media (max-width: 480px) { .portrait { width: 66%; } }
