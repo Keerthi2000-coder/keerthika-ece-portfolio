@@ -58,7 +58,7 @@ Handout word counts: reflective narratives ~100â€“150 words (A, B, D, E), ~100â€
 tools/sync-layout.js        shared header/footer/originality/subnav generator (run after changes)
 assets/css/style.css        the only stylesheet (tokens in :root at the top; handout components at the end)
 assets/js/main.js           the only script (see Interactions)
-assets/img/                 keerthika-graduation-portrait.jpg (hero + welcome popup; 4:5 crop of the campus graduation photo), keerthika-graduation.jpeg (About)
+assets/img/                 keerthika-graduation-portrait.jpg (hero + welcome popup; 4:5 crop of the campus graduation photo), keerthika-graduation-diploma.jpg (About; square crop of the diploma photo)
 assets/docs/application/    resume, cover letter, professional references PDFs (published)
 assets/docs/coursework/     philosophy + pedagogical documentation PDFs (published; ped doc has its title page removed)
 assets/docs/certificates/   certificates (published)

@@ -1241,3 +1241,6 @@ main { overflow-x: clip; }
 .portrait-badge { bottom: -30px; left: -34px; }
 @media (max-width: 900px) { .portrait-badge.alt { top: -26px; right: -18px; } .portrait-badge { bottom: -24px; left: -18px; } }
 .hero .portrait { margin-top: 1.5rem; margin-bottom: 1.5rem; }
+
+.about-photo img { object-position: 50% 0%; }
+
