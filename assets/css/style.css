@@ -1247,3 +1247,54 @@ main { overflow-x: clip; }
 
 .welcome-avatar img { object-position: 50% 50%; }
 
+
+/* ---------- Hero: illustrated pop-out portrait ---------- */
+.portrait.pop .portrait-frame {
+  overflow: visible;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255,255,255,.7), transparent 45%),
+    linear-gradient(165deg, #d7ece8 0%, #fbefd9 62%, #f8e5e1 100%);
+  clip-path: inset(-45% -25% 0 -25% round 0 0 18px 18px);
+}
+.portrait.pop .portrait-frame::before {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  background-image: radial-gradient(rgba(31,122,114,.16) 1.2px, transparent 1.2px); background-size: 16px 16px;
+  -webkit-mask: linear-gradient(#000, transparent 75%); mask: linear-gradient(#000, transparent 75%);
+}
+.portrait.pop .portrait-frame img {
+  position: absolute; left: 50%; bottom: 0; width: 92%; height: auto; max-width: none;
+  transform: translateX(-50%) translateZ(30px); object-fit: contain;
+  filter: drop-shadow(0 16px 22px rgba(22,36,58,.22));
+  transition: transform .4s cubic-bezier(.2,.75,.15,1);
+}
+.portrait.pop:hover .portrait-frame img { transform: translateX(-50%) translateY(-6px) translateZ(30px) scale(1.02); }
+.hero .portrait.pop { margin-top: 5.5rem; }
+@media (max-width: 900px) { .hero .portrait.pop { margin-top: 5rem; } }
+.portrait.pop .portrait-frame { background:
+    radial-gradient(circle at 30% 18%, rgba(255,255,255,.65), transparent 42%),
+    linear-gradient(165deg, #bfe2db 0%, #f6dfb4 62%, #f3cfc6 100%); }
+.portrait.pop .portrait-frame img { width: 80%; }
+.portrait.pop .portrait-badge.alt { top: 34%; right: -78px; }
+.portrait.pop .portrait-badge { bottom: -26px; left: -52px; }
+.hero .portrait.pop { margin-top: 4rem; }
+@media (max-width: 900px) { .portrait.pop .portrait-badge.alt { top: 30%; right: -24px; } .portrait.pop .portrait-badge { left: -18px; } }
+
+/* Pop-out v2: no frame, no orbit; badges clear of the face */
+.portrait.pop .orbit, .portrait.pop .portrait-deco { display: none; }
+.portrait.pop .portrait-frame, .portrait.pop .portrait-frame::before { background: none; box-shadow: none; clip-path: none; }
+.portrait.pop .portrait-frame img {
+  width: 86%;
+  -webkit-mask-image: linear-gradient(#000 82%, transparent 100%); mask-image: linear-gradient(#000 82%, transparent 100%);
+}
+.portrait.pop .portrait-badge.alt { top: 58%; right: -96px; }
+.portrait.pop .portrait-badge { bottom: 4%; left: -80px; }
+@media (max-width: 900px) {
+  .portrait.pop .portrait-badge.alt { top: 60%; right: -40px; }
+  .portrait.pop .portrait-badge { bottom: 4%; left: -40px; }
+}
+@media (max-width: 480px) {
+  .portrait.pop .portrait-badge.alt { right: -14px; }
+  .portrait.pop .portrait-badge { left: -14px; }
+}
+.portrait.pop .portrait-badge.alt { bottom: auto; left: auto; }
+.portrait.pop .portrait-badge:not(.alt) { top: auto; right: auto; }
