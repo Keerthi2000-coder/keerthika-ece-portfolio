@@ -85,17 +85,6 @@ Source Documents/           original files as received. NOT published (gitignore
 - The folder path contains an apostrophe (`Keerthika's Portfolio`), which breaks bash quoting/heredocs. Prefer PowerShell or Node scripts.
 - Regex edits on HTML: never use lazy `[\s\S]*?</span>\s*</span>`-style patterns; they can swallow half a page. Anchor on unique markers.
 
-## Working from GitHub (Claude GitHub Action)
-
-Keerthika can request changes herself: she opens an issue from the "Ask Claude to change my portfolio" template (or comments `@claude ...`), Claude works on a branch and opens a pull request, `preview.yml` posts a preview link (`/pr-preview/pr-N/`), and she merges to publish (`deploy.yml` copies `main` to the `gh-pages` branch, which Pages serves). Her guide: `.github/HOW-TO-UPDATE.md`.
-
-When running there:
-- `Source Documents/` and `Portfolio Agent/` don't exist (local only). Put published files straight into `assets/docs/<category>/`.
-- Files she attaches to the issue: download them with `curl -L` and check them (no title page, no address/phone, no confidential numbers, children anonymous) before adding.
-- Always run `node tools/sync-layout.js`, commit, and open a pull request. Never push to `main` directly.
-- Her reflections, goals and land acknowledgement must be her exact words: if she hasn't provided the text, ask for it in a comment instead of writing it.
-- Reply in plain, friendly language (she isn't technical) and remind her to check the preview link before merging.
-
 ## Design system (assets/css/style.css)
 
 - Fonts: **Fraunces** (serif) + **Plus Jakarta Sans**; icons: Font Awesome 6.5.2 (cdnjs).
