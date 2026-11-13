@@ -2,9 +2,9 @@
 
 Static portfolio website for an Early Childhood Educator (Toronto, ON), built to the **ECE 245 Digital Showcase Portfolio handout (Fall 2026)**. Plain HTML/CSS/JS, no framework, no build step except the layout sync script below.
 
-- **Live site:** https://keerthi2000-coder.github.io/keerthika-ece-portfolio/
-- **Repo:** https://github.com/Keerthi2000-coder/keerthika-ece-portfolio (branch `main`, GitHub Pages from `/ (root)`)
-- **Old repo** `Keerthi2000-coder/keerthika-portfolio` (remote `old-origin`) holds the previous site. Don't push there.
+- **Live site:** https://keerthi2000-coder.github.io/ECE-Portfolio-2026/
+- **Repo:** https://github.com/Keerthi2000-coder/ECE-Portfolio-2026 (branch `main`, GitHub Pages from `/ (root)`)
+- **Old repo** `Keerthi2000-coder/ECE-Portfolio-2025` (remote `old-origin`) holds the previous site. Don't push there.
 - **Handout:** `ECE245 Assignment Handout - Digital Showcase Portfolio Structure & Content Summary (F26).docx` (kept locally, not published). It is the source of truth for what each page must contain.
 
 ## Portfolio Agent (local only)
@@ -134,7 +134,7 @@ If `git push` fails with "terminal prompts disabled": `$env:GCM_INTERACTIVE='alw
 ## Still needed from Keerthika (handout items)
 
 1. **Personalized land acknowledgement** from her Land-Based Learning class (the current text is the Humber-style statement the handout says not to use).
-2. **Revised resume + cover letter PDFs**: professor's feedback, max 3 pages, **no home address or phone**, no title page. They should also print the new portfolio URL.
+2. **Revised cover letter PDF**: professor's feedback, max 3 pages, no home address or phone, no title page; should print the new portfolio URL and say OCT certified. (Resume done 2026-11-13: rebuilt from her resume text with the ECE-Portfolio-2026 URL, OCT certified, no address/phone.)
 3. **A. reflective narrative** (100–150 words).
 4. **B. Learning story** (with photos, anonymous, no title page) + narrative.
 5. **C. Two responsive inclusive plans**: plan, set-up photos, children engaging (if possible), Mentor Educator feedback, narrative (100–125 words).
