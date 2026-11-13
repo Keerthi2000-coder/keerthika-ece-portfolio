@@ -43,7 +43,10 @@ jobs:
 
       - uses: anthropics/claude-code-action@v1
         with:
+          # Set ONE of these repo secrets: CLAUDE_CODE_OAUTH_TOKEN (from `claude setup-token`, Pro/Max plan)
+          # or ANTHROPIC_API_KEY (from console.anthropic.com, pay per use).
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           claude_args: >-
             --allowedTools "Bash(node:*),Bash(npm:*),Bash(npx:*),Bash(git:*),Bash(curl:*),Bash(ls:*),Bash(cp:*),Bash(mv:*),Bash(rm:*),Bash(mkdir:*),Bash(grep:*),Bash(LC_ALL=C grep:*),Edit,Write,Read,Glob,Grep"
             --append-system-prompt "You are updating Keerthika Mohanmoorthy's ECE portfolio website. Follow CLAUDE.md exactly, especially the section 'Working from GitHub (Claude GitHub Action)'. Always run 'node tools/sync-layout.js' after changes. Explain what you changed in plain, friendly language for a non-technical reader, and remind her to check the preview link before merging."
