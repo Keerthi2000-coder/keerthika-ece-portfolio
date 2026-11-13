@@ -1,0 +1,29 @@
+# Publishes the live site: copies main to the gh-pages branch (GitHub Pages serves gh-pages).
+# Preview folders under pr-preview/ are left untouched.
+name: Deploy site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: gh-pages
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: .
+          clean-exclude: pr-preview/
+          force: false

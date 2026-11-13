@@ -65,7 +65,7 @@ assets/js/main.js           the only script (see Interactions)
 assets/img/                 keerthika-graduate-pop.png (hero: illustrated cut-out, waist-up, transparent PNG made from "Cartoon Graduate Holding Diploma.png" with Portfolio Agent/scripts/remove-black-bg.ps1; shown as `.portrait.pop` with no frame/orbit), keerthika-avatar.jpg (welcome popup face crop), keerthika-graduate-mini.png (small full-length figure on the right of every inner-page hero; injected by tools/sync-layout.js as `.hero-figure`, shown only at >=1100px), keerthika-graduation-portrait.jpg (photo version, currently unused), keerthika-graduation-diploma.jpg (About; square crop of the diploma photo)
 assets/docs/application/    resume, cover letter, professional references PDFs (published)
 assets/docs/coursework/     philosophy + pedagogical documentation PDFs (published; ped doc has its title page removed)
-assets/docs/certificates/   certificates (published)
+assets/docs/certificates/   certificates (published; never the OCT certificate/card)
 Source Documents/           original files as received. NOT published (gitignored)
 .nojekyll                   GitHub Pages serves files as-is
 ```
@@ -75,6 +75,8 @@ Source Documents/           original files as received. NOT published (gitignore
 - **No title pages** in uploaded documents (handout). The published pedagogical documentation PDF had page 1 (title page with student numbers) removed with `pdf-lib`; the original stays in `Source Documents/`.
 - **No home address or phone number** in the cover letter/resume (handout). Her phone was removed from the whole site; contact is email + LinkedIn.
 - **Confidentiality:** children only as Child A, B, …; no student numbers or classmates' surnames.
+- **OCT:** she is an Ontario Certified Teacher (certified Nov 2026). Her **OCT registration number, OCT certificate and OCT member card are confidential**: never publish them or put the number in any page or PDF. Link to the public register (https://www.oct.ca/findateacher) instead.
+- **Repo is public**: anything committed (even if deleted later) stays in git history. Check documents for confidential details *before* committing.
 - **Non-ASCII → entities** (the sync script does this). Check: `LC_ALL=C grep -c '[^ -~	]' *.html assets/css/style.css assets/js/main.js` → all 0.
 - **Write "Resume", not "Résumé"** (her preference).
 - **Hero photo:** keep badges/decorations off the photo itself (handout: professional photo free of filters and embellishments). Originals live in `Source Documents/4 - Photos/`.
@@ -82,6 +84,17 @@ Source Documents/           original files as received. NOT published (gitignore
 - **Commit author** for this repo is set locally: `Keerthika Mohanmoorthy <itskeerthi2000@gmail.com>`.
 - The folder path contains an apostrophe (`Keerthika's Portfolio`), which breaks bash quoting/heredocs. Prefer PowerShell or Node scripts.
 - Regex edits on HTML: never use lazy `[\s\S]*?</span>\s*</span>`-style patterns; they can swallow half a page. Anchor on unique markers.
+
+## Working from GitHub (Claude GitHub Action)
+
+Keerthika can request changes herself: she opens an issue from the "Ask Claude to change my portfolio" template (or comments `@claude ...`), Claude works on a branch and opens a pull request, `preview.yml` posts a preview link (`/pr-preview/pr-N/`), and she merges to publish (`deploy.yml` copies `main` to the `gh-pages` branch, which Pages serves). Her guide: `.github/HOW-TO-UPDATE.md`.
+
+When running there:
+- `Source Documents/` and `Portfolio Agent/` don't exist (local only). Put published files straight into `assets/docs/<category>/`.
+- Files she attaches to the issue: download them with `curl -L` and check them (no title page, no address/phone, no confidential numbers, children anonymous) before adding.
+- Always run `node tools/sync-layout.js`, commit, and open a pull request. Never push to `main` directly.
+- Her reflections, goals and land acknowledgement must be her exact words: if she hasn't provided the text, ask for it in a comment instead of writing it.
+- Reply in plain, friendly language (she isn't technical) and remind her to check the preview link before merging.
 
 ## Design system (assets/css/style.css)
 
